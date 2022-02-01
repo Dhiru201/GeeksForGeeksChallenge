@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TopNewsFeedTableCell" rowHeight="330" id="KGk-i7-Jjw" customClass="TopNewsFeedTableCell" customModule="GeeksForGeeksChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="330"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="330"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFv-DD-ua7">
+                        <rect key="frame" x="16" y="16" width="348" height="298"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fgl-6C-COA">
+                                <rect key="frame" x="0.0" y="0.0" width="348" height="191.5"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="eUO-B1-UKL">
+                                <rect key="frame" x="8" y="199.5" width="332" height="90.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Planes heading to SA outback after 'massive deluge' hits APY Lands" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7p-D7-RDN">
+                                        <rect key="frame" x="0.0" y="0.0" width="332" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arZ-oO-yqg">
+                                        <rect key="frame" x="0.0" y="57" width="332" height="1"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.80000000000000004" id="3e3-Au-Taf"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="2022-02-01 00:16:20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyY-Vz-4Es">
+                                        <rect key="frame" x="0.0" y="70" width="332" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eUO-B1-UKL" firstAttribute="top" secondItem="fgl-6C-COA" secondAttribute="bottom" constant="8" id="6VZ-GD-64X"/>
+                            <constraint firstAttribute="trailing" secondItem="fgl-6C-COA" secondAttribute="trailing" id="Hc3-Mx-KAM"/>
+                            <constraint firstItem="fgl-6C-COA" firstAttribute="leading" secondItem="xFv-DD-ua7" secondAttribute="leading" id="IEu-3w-E0N"/>
+                            <constraint firstItem="fgl-6C-COA" firstAttribute="top" secondItem="xFv-DD-ua7" secondAttribute="top" id="Oxs-eK-s3a"/>
+                            <constraint firstAttribute="trailing" secondItem="eUO-B1-UKL" secondAttribute="trailing" constant="8" id="Rbl-pb-Crj"/>
+                            <constraint firstItem="eUO-B1-UKL" firstAttribute="leading" secondItem="xFv-DD-ua7" secondAttribute="leading" constant="8" id="Ze1-dR-C3m"/>
+                            <constraint firstItem="fgl-6C-COA" firstAttribute="height" secondItem="xFv-DD-ua7" secondAttribute="width" multiplier="0.55" id="iHk-XB-AmH"/>
+                            <constraint firstAttribute="bottom" secondItem="eUO-B1-UKL" secondAttribute="bottom" constant="8" id="rtc-sT-EdU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xFv-DD-ua7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="DnB-49-sOT"/>
+                    <constraint firstItem="xFv-DD-ua7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="H5G-jC-gkQ"/>
+                    <constraint firstAttribute="trailing" secondItem="xFv-DD-ua7" secondAttribute="trailing" constant="16" id="KnZ-mM-UNv"/>
+                    <constraint firstAttribute="bottom" secondItem="xFv-DD-ua7" secondAttribute="bottom" constant="16" id="gNg-wm-7ly"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="newsContainerView" destination="xFv-DD-ua7" id="QY8-1N-1bM"/>
+                <outlet property="newsDateLbl" destination="GyY-Vz-4Es" id="gHa-c1-k9P"/>
+                <outlet property="newsImageView" destination="fgl-6C-COA" id="RVG-lH-8qz"/>
+                <outlet property="newsTitleLbl" destination="K7p-D7-RDN" id="RcL-1p-b5W"/>
+                <outlet property="separatorView" destination="arZ-oO-yqg" id="030-vd-awV"/>
+            </connections>
+            <point key="canvasLocation" x="179.71014492753625" y="83.035714285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

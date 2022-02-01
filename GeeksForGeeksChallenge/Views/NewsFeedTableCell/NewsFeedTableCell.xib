@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="KGk-i7-Jjw" customClass="NewsFeedTableCell" customModule="GeeksForGeeksChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3IF-jq-a07">
+                        <rect key="frame" x="16" y="16" width="347" height="118"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fZG-0e-njk">
+                                <rect key="frame" x="8" y="8" width="209.5" height="102"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Planes heading to SA outback after 'massive deluge' hits APY Lands" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leW-Ad-zd2">
+                                        <rect key="frame" x="0.0" y="0.0" width="209.5" height="65.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="2022-02-01 00:16:20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxa-8f-idU">
+                                        <rect key="frame" x="0.0" y="81.5" width="209.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kbq-bs-sjk">
+                                <rect key="frame" x="225.5" y="0.0" width="121.5" height="118"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fZG-0e-njk" firstAttribute="leading" secondItem="3IF-jq-a07" secondAttribute="leading" constant="8" id="1Tb-SR-Nme"/>
+                            <constraint firstItem="fZG-0e-njk" firstAttribute="trailing" secondItem="kbq-bs-sjk" secondAttribute="leading" constant="-8" id="3S0-Qm-XkT"/>
+                            <constraint firstItem="kbq-bs-sjk" firstAttribute="width" secondItem="3IF-jq-a07" secondAttribute="width" multiplier="0.35" id="71w-fz-mTv"/>
+                            <constraint firstAttribute="bottom" secondItem="fZG-0e-njk" secondAttribute="bottom" constant="8" id="WVn-b4-XB2"/>
+                            <constraint firstItem="kbq-bs-sjk" firstAttribute="top" secondItem="3IF-jq-a07" secondAttribute="top" priority="250" id="fG9-l7-6Sw"/>
+                            <constraint firstAttribute="trailing" secondItem="kbq-bs-sjk" secondAttribute="trailing" id="fIE-Oc-GoH"/>
+                            <constraint firstAttribute="bottom" secondItem="kbq-bs-sjk" secondAttribute="bottom" priority="250" id="uk1-7Z-4Id"/>
+                            <constraint firstItem="fZG-0e-njk" firstAttribute="top" secondItem="3IF-jq-a07" secondAttribute="top" constant="8" id="ygG-zg-j92"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3IF-jq-a07" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="YYi-l9-vFh"/>
+                    <constraint firstItem="3IF-jq-a07" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="bie-d8-4uU"/>
+                    <constraint firstAttribute="bottom" secondItem="3IF-jq-a07" secondAttribute="bottom" constant="16" id="liq-KI-Tsb"/>
+                    <constraint firstAttribute="trailing" secondItem="3IF-jq-a07" secondAttribute="trailing" constant="16" id="qLc-70-PTf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="newsContainerView" destination="3IF-jq-a07" id="EvR-GK-DQj"/>
+                <outlet property="newsDateLbl" destination="zxa-8f-idU" id="Rzs-NZ-H0K"/>
+                <outlet property="newsImageView" destination="kbq-bs-sjk" id="Qm6-GL-V9t"/>
+                <outlet property="newsTitleLbl" destination="leW-Ad-zd2" id="ss8-Ct-wXw"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="69"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
